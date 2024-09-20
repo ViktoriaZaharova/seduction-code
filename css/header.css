@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  align-items: center;
+  color: #2B2B2B;
+  font-size: 29px;
+  font-family: "Viaoda Libre", sans-serif;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.logo img {
+  margin: 0 13px 0 0;
+}

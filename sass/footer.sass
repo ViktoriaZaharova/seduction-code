@@ -1,0 +1,70 @@
+@import "vars"
+
+footer
+  position: relative
+  z-index: 1
+  padding: 100px 0
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    bottom: -85px
+    left: 50%
+    transform: translate(-50%,0)
+    width: 503px
+    height: 503px
+    background: url('../img/footer-img.png') no-repeat center top
+    background-size: 100%
+    z-index: -1
+  .logo
+    justify-content: flex-start
+    margin: 0 0 30px
+    font-size: 30px
+  .container
+    align-items: flex-start
+  .box-text
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0  
+ 
+
+.footer-box
+  max-width: 50%
+  font-size: 28px
+  &:last-child
+    text-align: right 
+    margin-left: auto
+
+         
+.copyright
+  color: rgba($black, .5)      
+  margin: 30px 0 0  
+
+.list-social
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+  margin: 0 0 30px
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    a
+      @include d-flex
+      width: 65px
+      height: 65px
+      min-width: 65px
+      border-radius: 15px
+      background: $gray
+      &:hover
+        background: $blue    
+
+.link-document
+  margin: 0 0 30px auto
+  color: rgba($black, .8)
+  &:hover
+    color: $black
+
+.text-forbidden
+  color: rgba($black, .5)

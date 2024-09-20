@@ -1,0 +1,147 @@
+.marquee {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background: #94A3B2;
+  color: #FAFAFA;
+  display: flex;
+  overflow-x: hidden;
+  font-size: 45px;
+  font-family: "Viaoda Libre", sans-serif;
+  line-height: 120%;
+  padding: 23px 0;
+}
+
+.track {
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  animation: marquee 8s linear infinite;
+}
+.track::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #FAFAFA;
+  border-radius: 50%;
+  margin: 0 10px 0;
+  display: inline-block;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+.prices {
+  margin: 0 0 80px;
+}
+
+.price-card__head {
+  width: 100%;
+  min-height: 310px;
+  margin: 0 0 20px;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #0D284C;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FAFAFA;
+}
+.price-card__head .subtext {
+  display: block;
+  color: #94A3B2;
+  margin: 0 auto 30px;
+}
+.price-card__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.price-card__body {
+  border: 3px solid #0D284C;
+  border-radius: 60px;
+  padding: 40px;
+  background: #FAFAFA;
+  line-height: 135%;
+}
+.price-card__body h4 {
+  margin: 0 0 20px;
+}
+.price-card .box-text {
+  margin: 0 0 80px 0;
+  max-width: 516px;
+}
+.price-card .price {
+  margin: 100px 0 0;
+}
+.price-card__footer {
+  margin: 20px 0 0;
+}
+.price-card__footer .btn {
+  width: 100%;
+}
+
+.price-card2 .price-card__head {
+  border: none;
+  color: #fff;
+}
+.price-card2 .price-card__head .subtext {
+  color: rgba(255, 255, 255, 0.5);
+}
+.price-card2 .price-card__body {
+  background: #0D284C;
+  color: #fff;
+  border: none;
+}
+.price-card2 .price-card .box-text {
+  margin: 0 0 35px 0;
+}
+.price-card2 .price {
+  margin: 45px 0 0;
+}
+
+.price-card3 .price-card__head {
+  color: #fff;
+  border: none;
+}
+.price-card3 .price-card__head h3 {
+  font-size: 168px;
+}
+.price-card3 .price-card__body {
+  background: #94A3B2;
+  border: none;
+  color: #fff;
+}
+.price-card3 .list-check li::before {
+  background: url("../img/check-icon-blue.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.price {
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 84px;
+  text-align: center;
+  line-height: normal;
+  margin: 50px auto 0;
+}
+
+.callback {
+  margin: 50px 0 0;
+}
+.callback .btn-group {
+  justify-content: space-between;
+}

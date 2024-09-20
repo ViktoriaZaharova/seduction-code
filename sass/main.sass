@@ -1,0 +1,132 @@
+@import "vars"
+
+// бегущая строка
+.marquee
+  position: relative
+  width: 100%
+  max-width: 100%
+  background: $gray
+  color: $white
+  display: flex
+  overflow-x: hidden
+  font-size: 45px
+  font-family: $font
+  line-height: 120%
+  padding: 23px 0
+
+.track
+  white-space: nowrap
+  width: 100%
+  display: flex
+  align-items: center
+  animation: marquee 8s linear infinite
+  &::after
+    content: ''
+    width: 10px
+    height: 10px
+    background: $white
+    border-radius: 50%
+    margin: 0 10px 0
+    display: inline-block
+
+@keyframes marquee
+  from
+    transform: translateX(0)
+  to
+    transform: translateX(calc(-100% - 20px))
+
+// section prices
+.prices
+  margin: 0 0 80px
+  
+    
+.price-card
+  &__head
+    width: 100%
+    min-height: 310px
+    margin: 0 0 20px
+    position: relative
+    z-index: 1
+    border: 3px solid $blue
+    border-radius: 60px
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: $white
+    .subtext
+      display: block
+      color: $gray
+      margin: 0 auto 30px
+  &__bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+  &__body
+    border: 3px solid $blue
+    border-radius: 60px
+    padding: 40px
+    background: $white
+    line-height: 135%
+    h4
+      margin: 0 0 20px
+  .box-text
+    margin: 0 0 80px 0
+    max-width: 516px
+  .price
+    margin: 100px 0 0
+  &__footer
+    margin: 20px 0 0
+    .btn
+      width: 100%
+
+.price-card2
+  .price-card
+    &__head
+      border: none
+      color: #fff
+      .subtext
+        color: rgba(#fff, .5)
+    &__body
+      background: $blue
+      color: #fff
+      border: none
+    .box-text
+      margin: 0 0 35px 0
+  .price
+    margin: 45px 0 0
+
+.price-card3
+  .price-card
+    &__head
+      color: #fff
+      border: none
+      h3
+        font-size: 168px
+    &__body
+      background: $gray
+      border: none
+      color: #fff   
+  .list-check
+    li
+      &::before
+        background: url('../img/check-icon-blue.svg') no-repeat center
+        background-size: 100%     
+
+.price
+  font-family: $font
+  font-size: 84px
+  text-align: center
+  line-height: normal
+  margin: 50px auto 0
+
+// section callback
+.callback
+  margin: 50px 0 0
+  .btn-group
+    justify-content: space-between

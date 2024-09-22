@@ -35,11 +35,261 @@
   to
     transform: translateX(calc(-100% - 20px))
 
+// section section-two
+.section-two
+  .subtitle-box
+    font-size: 34px
+    margin: 0 auto
+    text-align: center
+    max-width: 1220px
+
+// section program
+.tabs__caption
+  // width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 -10px
+  li
+    @include d-flex
+    text-align: center
+    width: 16.666%
+    text-transform: uppercase
+    font-family: $font
+    font-size: 45px
+    height: 100px
+    margin: 0 0 20px 0
+    padding: 0 10px
+    cursor: pointer
+    span
+      width: 100%
+      height: 100%
+      @include d-flex
+      text-align: center
+      color: $blue
+      background: $gray
+      border-radius: 25px
+      padding: 25px 10px
+      transition: .3s ease
+    &:last-child
+      margin: 0
+    &.active
+      span
+        background: $blue
+        color: #fff
+    .item-click-text
+      text-transform: none
+      font-family: $default-font
+      font-size: 26px 
+      background: transparent
+      border-radius: 0
+      padding: 0
+      text-align: left
+      color: $gray    
+      img
+        margin: 0 20px 0 0
+        width: 35px
+        min-width: 35px
+
+.program-content
+  width: 100%
+  display: flex
+  align-items: stretch
+
+.program-card
+  flex: 1
+  border: 3px solid $blue
+  padding: 50px 40px 
+  text-align: center
+  position: relative
+  z-index: 1
+  width: 100%
+  min-height: 600px
+  &:first-child
+    border-radius: 60px 0 0 60px 
+    margin: 0 -3px 0 0
+    .program-card
+      &__bg
+        transform: none
+        left: 0
+        bottom: 0
+        max-width: none
+  &:last-child
+    margin: 0 0 0 -3px
+    border-radius: 0 60px 60px 0  
+    .program-card
+      &__bg
+        transform: none
+        left: auto
+        right: 0
+        bottom: 0 
+        max-width: none
+  &__icon
+    margin: 0 auto 30px
+    @include d-flex
+  h4
+    text-transform: uppercase
+    margin: 0 auto 20px
+  .box-text
+    font-size: 34px
+  &__bg
+    @include d-flex
+    position: absolute
+    left: 50%
+    bottom: 24px    
+    transform: translate(-50%,0)
+    z-index: -1  
+    max-width: 480px
+    width: 100%    
+    img
+      width: 100%     
+
+// section advantages
+.advantages-box
+  width: 100%
+  height: 100%
+  background: $blue
+  color: #fff
+  border-radius: 60px
+  padding: 45px 50px
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  &__icon
+    margin: 0 0 auto
+  h4
+    text-transform: uppercase
+    margin: 0 0 25px
+
+.advantages-box-bg
+  padding: 0
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+// section why-sign
+.why-sign
+  h2
+    text-align: left
+  &__content
+    max-width: 1530px
+    margin-left: auto
+
+.why-sign-card
+  width: 100%
+  height: 100%
+  padding: 40px 50px
+  border-radius: 60px
+  border: 3px solid $blue
+  &__icon
+    margin: 0 0 90px
+    height: 45px
+    img
+      max-height: 100%
+  h5
+    text-transform: uppercase
+    margin: 0 0 15px
+    font-size: 34px
+    font-weight: 600
+    max-width: 495px
+    color: $blue
+
+// section reviews
+.reviews-content
+  width: 100%
+  border-radius: 60px
+  background: url('../img/reviews-bg.jpg') no-repeat center
+  background-size: cover
+  padding: 100px 0 100px 315px
+  color: #fff
+
+.reviews-card
+  width: 910px
+  min-width: 910px
+  border-radius: 60px
+  position: relative
+  z-index: 1
+  background: $gray url('../img/reviews-mask.svg') no-repeat center
+  background-size: 100%
+  color: #fff
+  margin: 0 20px 0 0
+  padding: 35px 50px 40px
+  display: flex
+  flex-direction: column
+  &:last-child
+    margin: 0
+  h3
+    text-transform: none
+    margin: 0 0 auto
+  .box-text
+    margin: 145px 0 0
+
+// section bonuses
+.bonuses-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: center
+
+.bonuses-card
+  max-width: 600px
+  width: 100%
+  margin: 0 20px 0 0
+  border-radius: 60px
+  border: 3px solid $gray
+  position: relative
+  z-index: 1
+  box-shadow: -10px 10px 0px 0px rgba($gray, 1)
+  padding: 50px 20px
+  text-align: center
+  overflow: hidden
+  &__img
+    margin: 0 auto 45px
+    @include d-flex
+  .subtitle
+    color: $gray
+    margin: 0 auto 15px
+  .box-text
+    margin: 20px auto 0
+    max-width: 500px
+
+.bonuses-card2
+  padding: 40px 20px 0
+  margin: 10px 0 0
+  border-color: $blue
+  box-shadow: 10px -10px 0px 0px rgba($blue, 1)
+  .bonuses-card
+    &__img
+      margin: 0 auto
+
+// section chance
+.chance
+  text-align: center
+  h2
+    max-width: 1618px
+    margin: 0 auto 25px
+  .title-decor
+    &::before
+      background: url('../img/title-decor-white.svg') no-repeat center
+      background-size: 100%
+  .box-text
+    max-width: 1155px
+    margin: 0 auto
+    font-size: 34px
+
+.chance-content
+  background: $blue url('../img/chance-bg.svg') no-repeat center
+  background-size: cover
+  color: $white
+  padding: 100px 20px
+  width: 100%
+  border-radius: 60px
+
 // section prices
 .prices
   margin: 0 0 80px
-  
-    
+
 .price-card
   &__head
     width: 100%
@@ -111,12 +361,12 @@
     &__body
       background: $gray
       border: none
-      color: #fff   
+      color: #fff
   .list-check
     li
       &::before
         background: url('../img/check-icon-blue.svg') no-repeat center
-        background-size: 100%     
+        background-size: 100%
 
 .price
   font-family: $font
@@ -128,5 +378,8 @@
 // section callback
 .callback
   margin: 50px 0 0
+  h2
+    max-width: 1430px
+
   .btn-group
     justify-content: space-between

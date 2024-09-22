@@ -43,8 +43,18 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: normal
-  background: $white
+  background: $white url('../img/noise.png') no-repeat center
+  background-size: cover
   color: $black
+  z-index: 1
+
+.grain
+  width: 100%
+  height: 100%
+  position: absolute
+  z-index: -1
+  left: 0
+  top: 0
 
 img
   display: block
@@ -177,7 +187,7 @@ button, .btn
 
 strong, b
   font-weight: bold
-  display: inline-block
+  display: inline
 
 ul, ol
   padding: 0 0 0 20px
@@ -204,7 +214,7 @@ ul, ol
       min-width: 30px
       background: url('../img/check-icon.svg') no-repeat center
       background-size: 100%
-      margin: 5px 20px 0 0  
+      margin: 5px 20px 0 0
 
 h2
   font-family: $font
@@ -224,8 +234,24 @@ h3
 h4
   width: 100%
   line-height: normal
-  font-family: $font 
+  font-family: $font
   font-size: 45px
+  line-height: 110%
+
+.title-decor
+  padding: 0 0 54px
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    left: 50%
+    bottom: 0
+    transform: translate(-50%,0)
+    width: 100px
+    height: 17px
+    background: url('../img/title-decor.svg') no-repeat center
+    background-size: 100%
+    position: absolute
 
 .container
   padding: 0 40px
@@ -242,15 +268,21 @@ h4
 .row
   display: flex
   flex-wrap: wrap
-  // align-items: stretch
   margin: 0 -10px
 
 .col-30
   width: 33.33%
   padding: 0 10px
 
+.col-50
+  width: 50%
+  padding: 0 10px
+
 .mb-20
   margin-bottom: 20px
+
+.m-100
+  margin: 100px 0
 
 .box-text
   p
@@ -261,6 +293,57 @@ h4
 .color-red
   color: $red
 
+.horizontal-scroll
+  width: 100%
+  overflow-x: auto
+  display: flex
+  align-items: stretch
+
+.panel_heading
+  width: 100%
+  background: $gray
+  color: #fff
+  box-sizing: border-box
+  margin-bottom: 20px
+  padding: 54px 50px
+  border-radius: 50px
+  &:last-child
+    margin-bottom: 0
+  .block_title
+    box-sizing: border-box
+    transition: .3s ease
+    cursor: pointer
+    position: relative
+    display: flex
+    align-items: start
+    &:after
+      content: ''
+      background: $blue url("../img/plus.svg") no-repeat center
+      background-size: 37px
+      border-radius: 15px
+      width: 90px
+      height: 90px
+      min-width: 90px
+      margin-left: auto
+      @include d-flex
+      cursor: pointer
+      transition: .3s ease
+  h3
+    text-transform: none
+
+  .block_hover
+    font-size: 34px
+    display: none
+    padding: 40px 0 0
+    .box-text
+      max-width: 1075px
+
+.tabs__content
+  display: none
+  &.active
+    display: block
+
+// slick slider
 .slick-slider
   width: 100%
 

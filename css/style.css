@@ -44,8 +44,19 @@ body {
   line-height: normal;
   font-family: "Inter Tight", sans-serif;
   font-weight: normal;
-  background: #FAFAFA;
+  background: #FAFAFA url("../img/noise.png") no-repeat center;
+  background-size: cover;
   color: #2B2B2B;
+  z-index: 1;
+}
+
+.grain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
 }
 
 img {
@@ -207,7 +218,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 strong, b {
   font-weight: bold;
-  display: inline-block;
+  display: inline;
 }
 
 ul, ol {
@@ -264,6 +275,24 @@ h4 {
   line-height: normal;
   font-family: "Viaoda Libre", sans-serif;
   font-size: 45px;
+  line-height: 110%;
+}
+
+.title-decor {
+  padding: 0 0 54px;
+  position: relative;
+  z-index: 1;
+}
+.title-decor::before {
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 100px;
+  height: 17px;
+  background: url("../img/title-decor.svg") no-repeat center;
+  background-size: 100%;
+  position: absolute;
 }
 
 .container {
@@ -291,8 +320,17 @@ h4 {
   padding: 0 10px;
 }
 
+.col-50 {
+  width: 50%;
+  padding: 0 10px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.m-100 {
+  margin: 100px 0;
 }
 
 .box-text p {
@@ -304,6 +342,67 @@ h4 {
 
 .color-red {
   color: #BC0808;
+}
+
+.horizontal-scroll {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.panel_heading {
+  width: 100%;
+  background: #94A3B2;
+  color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 54px 50px;
+  border-radius: 50px;
+}
+.panel_heading:last-child {
+  margin-bottom: 0;
+}
+.panel_heading .block_title {
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: start;
+}
+.panel_heading .block_title:after {
+  content: "";
+  background: #0D284C url("../img/plus.svg") no-repeat center;
+  background-size: 37px;
+  border-radius: 15px;
+  width: 90px;
+  height: 90px;
+  min-width: 90px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.panel_heading h3 {
+  text-transform: none;
+}
+.panel_heading .block_hover {
+  font-size: 34px;
+  display: none;
+  padding: 40px 0 0;
+}
+.panel_heading .block_hover .box-text {
+  max-width: 1075px;
+}
+
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
 }
 
 .slick-slider {

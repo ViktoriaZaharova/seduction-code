@@ -42,6 +42,194 @@
     margin: 0 auto
     text-align: center
     max-width: 1220px
+    
+// section about course
+  
+
+
+// section practicum
+.practicum
+  position: relative
+  z-index: 1
+  background: url('../img/practicum-bg.svg') no-repeat right bottom
+  background-size: 463px  
+
+  .box-text
+    max-width: 1140px
+    font-size: 34px
+    text-align: center
+    margin: 0 auto  
+
+.days
+  width: 100%
+  display: flex
+  align-items: stretch
+  font-size: 34px
+  margin: 80px 0 0
+  h3
+    width: 50%
+    font-size: 108px
+    text-transform: none 
+
+.days-content
+  width: 50%
+  display: flex
+  flex-direction: column
+  .box-text
+    max-width: 700px
+
+.days-icon
+  margin: 0 0 auto
+
+.practicum-wrapper
+  margin: 40px 0 0
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.practicum-card
+  width: calc(33.33% - 10px)
+  margin: 70px 0 20px
+  color: $white
+  background: $gray   
+  border-radius: 60px
+  position: relative
+  z-index: 1
+  text-align: center 
+  padding: 50px 40px 200px
+  &__icon
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%,0)
+  h3
+    margin: 0 auto 35px
+  .subtitle
+    margin: 0 auto 25px  
+    // font-family: $font
+    color: rgba($white, .5)
+  .box-text
+    max-width: 430px
+    margin: 0 auto  
+  &:nth-child(2)
+    margin: 0 0 20px
+    .practicum-card
+      &__icon
+        bottom: 32px
+
+
+// section what-awaits
+.what-awaits
+  position: relative
+  z-index: 1
+  overflow: hidden
+  &__img
+    position: absolute
+    right: 0
+    bottom: 0
+    overflow: hidden
+    img
+      border-radius: 60px 0 0 60px
+  &__content
+    margin: 0 auto
+    max-width: 910px
+    width: 100%
+  &-box
+    width: 100%
+    padding: 70px 0
+    display: flex
+    align-items: flex-start
+    border-top: 2px solid $gray
+    font-size: 34px
+    &:last-child
+      border-bottom: 2px solid $gray
+    &__number
+      color: $gray
+      font-size: 45px
+      font-family: $font  
+      min-width: 135px
+    &__text
+      padding: 0 0 0 20px
+    h4
+      text-transform: uppercase
+      margin: 0 0 20px
+
+
+// section expert
+.expert
+  margin: 250px 0 100px
+
+.expert-content
+  width: 100%
+  background: $gray url('../img/expert-bg.svg') no-repeat center top
+  background-size: 100%
+  border-radius: 80px
+  color: $blue
+  padding: 0 20px 80px
+  text-align: center
+  h2
+    max-width: 1430px
+    &::before
+      background: url('../img/title-decor-blue.svg') no-repeat center
+      background-size: 100%
+    span
+      text-transform: uppercase
+  .box-text
+    max-width: 910px
+    margin: 0 auto
+
+.expert-photo
+  margin: -190px auto 55px
+  @include d-flex
+
+// section intensive 
+.intensive-give
+  overflow: hidden
+  width: 100%
+
+.intensive-give-slider
+  min-width: 4500px
+  .slick-slide
+    margin: 0 20px 0 0
+
+.intensive-give-card
+  width: 910px
+  height: 100%
+  min-height: 1030px
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  color: #fff
+  z-index: 1
+  position: relative
+  padding: 70px 56px
+  border-radius: 60px
+  font-size: 34px
+  &__bg
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 60px
+    left: 0
+    top: 0
+    position: absolute
+    z-index: -1
+  &__content
+    position: relative
+    z-index: 1
+    border-radius: 50px
+    width: 100%
+    background: $gray
+    padding: 50px 50px 40px
+  .subtitle
+    margin: 0 0 50px
+    color: rgba($white, .5)
+  h4
+    font-family: $default-font
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 34px
+    margin: 0 0 13px
 
 // section program
 .tabs__caption
@@ -80,12 +268,12 @@
     .item-click-text
       text-transform: none
       font-family: $default-font
-      font-size: 26px 
+      font-size: 26px
       background: transparent
       border-radius: 0
       padding: 0
       text-align: left
-      color: $gray    
+      color: $gray
       img
         margin: 0 20px 0 0
         width: 35px
@@ -99,14 +287,14 @@
 .program-card
   flex: 1
   border: 3px solid $blue
-  padding: 50px 40px 
+  padding: 50px 10px 100px
   text-align: center
   position: relative
   z-index: 1
   width: 100%
   min-height: 600px
   &:first-child
-    border-radius: 60px 0 0 60px 
+    border-radius: 60px 0 0 60px
     margin: 0 -3px 0 0
     .program-card
       &__bg
@@ -114,15 +302,17 @@
         left: 0
         bottom: 0
         max-width: none
+  &:nth-child(2)
+    padding-bottom: 250px
   &:last-child
     margin: 0 0 0 -3px
-    border-radius: 0 60px 60px 0  
+    border-radius: 0 60px 60px 0
     .program-card
       &__bg
         transform: none
         left: auto
         right: 0
-        bottom: 0 
+        bottom: 0
         max-width: none
   &__icon
     margin: 0 auto 30px
@@ -136,13 +326,13 @@
     @include d-flex
     position: absolute
     left: 50%
-    bottom: 24px    
+    bottom: 24px
     transform: translate(-50%,0)
-    z-index: -1  
+    z-index: -1
     max-width: 480px
-    width: 100%    
+    width: 100%
     img
-      width: 100%     
+      width: 100%
 
 // section advantages
 .advantages-box

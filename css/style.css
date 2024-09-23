@@ -260,6 +260,7 @@ h2 {
   line-height: 110%;
   margin: 0 auto 40px;
   position: relative;
+  width: 100%;
 }
 
 h3 {
@@ -405,12 +406,55 @@ h4 {
   display: block;
 }
 
+.title-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 0 60px;
+}
+.title-wrapper h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 0 0;
+}
+
 .slick-slider {
   width: 100%;
 }
 
 .slick-slide {
   outline: none;
+}
+
+.slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  transition: 0.3s ease;
+}
+.slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+.slick-prev img {
+  transform: scale(-1, 1);
+}
+
+.slider-nav {
+  display: flex;
+  align-items: center;
+}
+.slider-nav .slick-arrow {
+  margin: 0 20px 0 0;
+}
+.slider-nav .slick-arrow:last-child {
+  margin: 0;
 }
 
 .label-checkbox {

@@ -27,7 +27,15 @@ accordeon();
 })(jQuery);
 // end
 
-
+// slick slider
+$('.intensive-give-slider').slick({
+  infinite: false,
+  slidesToShow: 1,
+  variableWidth: true,
+  prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-right.svg" alt=""></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt=""></button>',
+  appendArrows: '.intensive-give-slider__nav'
+});
 
 // bg animation
 "use strict";

@@ -223,6 +223,7 @@ h2
   line-height: 110%
   margin: 0 auto 40px
   position: relative
+  width: 100%
 
 h3
   font-size: 84px
@@ -343,12 +344,45 @@ h4
   &.active
     display: block
 
+.title-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 60px
+  h2
+    width: fit-content
+    margin: 0 auto 0 0   
+
 // slick slider
 .slick-slider
   width: 100%
 
 .slick-slide
   outline: none
+
+.slick-arrow
+  @include d-flex
+  opacity: 1
+  cursor: pointer
+  z-index: 1
+  padding: 0
+  border: none
+  border-radius: 0
+  transition: .3s ease
+  &.slick-disabled
+    opacity: 0
+
+.slick-prev
+  img
+    transform: scale(-1,1)  
+
+.slider-nav
+  display: flex
+  align-items: center
+  .slick-arrow
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
 
 //checkbox my
 .label-checkbox

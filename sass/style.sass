@@ -216,6 +216,39 @@ ul, ol
       background-size: 100%
       margin: 5px 20px 0 0
 
+h1
+  position: relative
+  z-index: 1
+  text-transform: uppercase
+  width: 100%
+  text-align: center
+  font-size: 291px
+  line-height: 110%
+  font-family: $font
+  color: $blue
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    top: 44px
+    left: 213px
+    background: url('../img/pic.png') no-repeat center
+    background-size: 100%
+    width: 151px
+    height: 221px
+        
+
+.h1-subtitle
+  font-family: $font
+  font-size: 108px
+  text-align: center
+  line-height: 110%
+  margin: 0 auto
+  position: relative
+  width: 100%  
+  color: $blue
+  text-transform: lowercase
+
 h2
   font-family: $font
   font-size: 108px
@@ -281,6 +314,9 @@ h4
 
 .mb-20
   margin-bottom: 20px
+
+.mb-40
+  margin-bottom: 40px  
 
 .m-100
   margin: 100px 0

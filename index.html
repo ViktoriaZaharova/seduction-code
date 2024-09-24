@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Код соблазнения</title>
 
   <meta property="og:image" content="path/to/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -13,7 +13,7 @@
   <!-- add plugins css -->
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"> -->
   <!-- add plugins css end -->
 
   <link rel="stylesheet" href="css/style.css">
@@ -25,31 +25,46 @@
 
 <body>
   <canvas class="grain"></canvas>
-  <header>
-    <div class="container">
-      <div class="date-project">
-        <p>Старт:</p>
-        <span>1 октября</span>
-      </div>
-      <a href="index.html" class="logo"><img src="img/logo.png" alt=""><span>Марьяна <br>Романова</span></a>
-      <a href="#" class="link-social"><svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#whatsapp"></use>
-        </svg></a>
-    </div>
-  </header>
+
 
   <main class="main">
     <div class="container">
-      <div class="main-image main-image-left"></div>
+      <div class="main-image main-image-left">
+        <div class="main-image__img wow animate__animated animate__fadeIn"><img src="img/main-img1.jpg" alt=""></div>
+        <div class="main-image__text">
+          <div class="main-image__icon"><img src="img/home-decor.svg" alt=""></div>
+          <h4>Энергия соблазнения —
+            это не магия, а наука</h4>
+        </div>
+      </div>
       <div class="main-content">
+        <header class="header">
+          <div class="date-project">
+            <p>Старт:</p>
+            <span>1 октября</span>
+          </div>
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""><span>Марьяна <br>Романова</span></a>
+          <a href="#" class="link-social"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg></a>
+        </header>
+        <div class="subtitle">Интенсив Марьяны Романовой</div>
         <h1>Код</h1>
         <div class="h1-subtitle">Соблазнения:</div>
         <div class="slogan-time">
           <p>Раскрой свою внутреннюю магию за 11 дней</p>
         </div>
-        <a href="#" class="btn btn-red">Записаться на интенсив</a>
+        <a href="#callbackModal" class="btn btn-red w-100 open_modal">Записаться на интенсив</a>
       </div>
-      <div class="main-image main-image-right"></div>
+      <div class="main-image main-image-right">
+        <div class="main-image__img wow animate__animated animate__fadeIn"><img src="img/main-img2.jpg" alt=""></div>
+        <div class="main-image__text">
+          <div class="box-text">
+            <p><strong>11 дней — и ты в центре внимания:</strong> Притягивай к себе самых достойных мужчин, используя
+              силу внутренней энергии.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -60,13 +75,13 @@
     <span class="track">Раскрой свою внутреннюю магию за 11 дней</span>
   </div>
 
-  <section class="section-two">
+  <section class="section-two m-100">
     <div class="container">
       <h2 class="title-decor wow animation-title cssanimation leFadeIn random">Ты когда-нибудь замечала, как некоторые
         женщины
         мгновенно
-        оказываются в центре
-        внимания,</h2>
+        оказываются <span class="color-red">в центре
+          внимания,</span></h2>
       <div class="subtitle-box">
         <p>притягивают к себе взгляды всех мужчин и буквально <strong>заставляют их бороться за своё внимание?</strong>
           Эти женщины,
@@ -75,8 +90,122 @@
     </div>
   </section>
 
-  <section class="">
+  <section class="reasons m-100">
     <div class="container">
+      <div class="w-100">
+        <div class="row">
+          <div class="col-50 mb-20">
+            <div class="reasons-img wow animate__animated animate__fadeIn"><img src="img/reasons.jpg" alt=""></div>
+          </div>
+          <div class="col-50">
+            <div class="w-100">
+              <div class="row">
+                <div class="col-50 mb-20">
+                  <div class="reasons-box">
+                    <div class="reasons-box__number">01</div>
+                    <div class="box-text">
+                      <p>Тебя мучает одиночество?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50 mb-20">
+                  <div class="reasons-box">
+                    <div class="reasons-box__number">02</div>
+                    <div class="box-text">
+                      <p>Ты смотришь на других
+                        и спрашиваешь себя:
+                        «Почему это не я?»</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50 mb-20">
+                  <div class="reasons-box">
+                    <div class="reasons-box__number">03</div>
+                    <div class="box-text">
+                      <p>Тебе не хватает уверенности,
+                        и ты боишься, что никто никогда не увидит в тебе ту самую женщину, ради которой мужчины готовы
+                        на всё?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50 mb-20">
+                  <div class="reasons-box reasons-box-title">
+                    <h2>А ты?</h2>
+                  </div>
+                </div>
+                <div class="col-50 mb-20">
+                  <div class="reasons-box">
+                    <div class="reasons-box__number">04</div>
+                    <div class="box-text">
+                      <p>Ты устала от холодного равнодушия и недоступных мужчин?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50 mb-20">
+                  <div class="reasons-box">
+                    <div class="reasons-box__number">05</div>
+                    <div class="box-text">
+                      <p>Ты хочешь быть женщиной, ради которой мужчины готовы совершать подвиги, а не оставаться на
+                        втором плане?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fantasy m-100">
+    <div class="container">
+      <div class="w-100">
+        <div class="row">
+          <div class="col-50">
+            <h2>Эта программа создана для того, <span class="color-red">чтобы ты перестала быть невидимой.</span></h2>
+          </div>
+          <div class="col-50">
+            <div class="fantasy-content w-100">
+              <div class="fantasy-box">
+                <img src="img/fantasy1.svg" alt="" class="fantasy-box__bg">
+                <div class="box-text">
+                  <p>Представь, что через 11 дней ты станешь той женщиной, <strong>которая своим присутствием
+                      вызывает восхищение и желание.</strong></p>
+                </div>
+              </div>
+              <div class="fantasy-box">
+                <img src="img/fantasy2.svg" alt="" class="fantasy-box__bg">
+                <div class="box-text">
+                  <p>Ты станешь магической силой, которая привлекает любого мужчину, <strong>заставляя его хотеть только
+                      тебя.</strong></p>
+                </div>
+              </div>
+              <div class="fantasy-box">
+                <img src="img/fantasy1.svg" alt="" class="fantasy-box__bg">
+                <div class="box-text">
+                  <p>Ты сможешь завоевать сердце того, о ком мечтала, и навсегда <strong>избавиться от чувства
+                      одиночества.</strong></p>
+                </div>
+              </div>
+              <div class="fantasy-box">
+                <img src="img/fantasy2.svg" alt="" class="fantasy-box__bg">
+                <div class="box-text">
+                  <p>Ты будешь готова к тому, чтобы наконец-то создать ту самую семью, о которой ты мечтала,
+                    <strong>выйти
+                      замуж и быть любимой.</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="fantasy-box">
+                <img src="img/fantasy1.svg" alt="" class="fantasy-box__bg">
+                <h4>Неважно, что было в твоей жизни до этого момента — у тебя есть шанс всё изменить.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </section>
@@ -84,22 +213,45 @@
 
   <section class="about-course">
     <div class="container">
-      <div class="about-course-wrapper">
+      <div class="about-course-wrapper mb-40">
+        <h2>Интенсив Марьяны Романовой</h2>
         <div class="about-course-content">
-          <h2>Интенсив Марьяны Романовой</h2>
+
           <div class="box-text">
-            <p>даст тебе инструменты, <strong>которые помогут раскрыть твою притягательность</strong> и сделают тебя желанной для любого
+            <p>даст тебе инструменты, <strong>которые помогут раскрыть твою притягательность</strong> и сделают тебя
+              желанной для любого
               мужчины.</p>
             <div class="slogan-box">
               <p>Забудь о том, что тебя когда-либо считали «слишком обычной» или «незаметной». </p>
             </div>
 
-            <p>Вместо этого ты будешь той самой женщиной, <strong>которая покоряет одним взглядом, становится объектом желания и
-              олицетворением женственности и силы.</strong></p>
+            <p>Вместо этого ты будешь той самой женщиной, <strong>которая покоряет одним взглядом, становится объектом
+                желания и
+                олицетворением женственности и силы.</strong></p>
           </div>
         </div>
-        <div class="about-course-img"></div>
+        <div class="about-course-img"><img src="img/about-course.png" alt=""></div>
       </div>
+      <div class="w-100">
+        <div class="row">
+          <div class="col-50 mb-40">
+            <div class="box-text">
+              <p>Интенсив направлен на то, <strong>чтобы за 11 дней накачать себя энергией,</strong> которая
+                большинством людей
+                считывается как самая привлекательная на свете. Энергия притяжения и соблазнения. Красота, тяга,
+                животная привлекательность. </p>
+            </div>
+          </div>
+          <div class="col-50 mb-40">
+            <div class="box-text">
+              <p>Есть такие люди — роковые мужчины и женщины, люди-омуты — которые одним взглядом могут покорить мир. Мы
+                разберем — как это у них получается — <strong>и тоже накачаем себя такой энергией – мягко, безопасно,
+                  постепенно.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#callbackModal" class="btn btn-red w-100 open_modal">Записаться на интенсив</a>
     </div>
   </section>
 
@@ -782,7 +934,7 @@
             </div>
           </div>
 
-          <a href="#" class="btn btn-red w-100">Записаться на интенсив</a>
+          <a href="#callbackModal" class="btn btn-red w-100 open_modal">Записаться на интенсив</a>
         </div>
       </div>
     </div>
@@ -885,7 +1037,7 @@
         </div>
       </div>
 
-      <a href="#" class="btn btn-red w-100">Записаться на интенсив</a>
+      <a href="#callbackModal" class="btn btn-red w-100 open_modal">Записаться на интенсив</a>
     </div>
   </section>
 
@@ -988,7 +1140,7 @@
   <section class="callback">
     <div class="container">
       <h2 class="wow animation-title cssanimation leFadeIn random">Если у вас возникли трудности
-        с оплатой или другие вопросы, пожалуйста, свяжитесь с нами</h2>
+        с оплатой или другие вопросы, <span class="color-red">пожалуйста, свяжитесь с нами</span></h2>
       <div class="btn-group">
         <a href="#" class="btn btn-blue">
           <svg class="svg-icon">
@@ -1032,12 +1184,21 @@
       </div>
     </div>
   </footer>
+<!-- modal -->
+  <div class="modal__div" id="callbackModal">
+    <div class="modal__wrapper">
+        <span class="modal__close"><img src="img/plus.svg" alt=""></span>
+        modal-code
+    </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
 
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+  <!-- <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script> -->
   <script src="js/wow.js"></script>
   <!-- add plugins js end-->
 

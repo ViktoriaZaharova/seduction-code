@@ -1,3 +1,53 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 35px 0 60px;
+}
+
+.link-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background: #94A3B2;
+  border-radius: 15px;
+  padding: 10px;
+  fill: #FAFAFA;
+}
+.link-social:hover {
+  background: #0D284C;
+}
+.link-social svg {
+  max-width: 30px;
+}
+
+.date-project {
+  font-size: 24px;
+}
+.date-project p {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.date-project p::before {
+  content: "";
+  display: inline-block;
+  background: #BC0808;
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  margin: 0 5px 0 0;
+  border-radius: 50%;
+}
+.date-project span {
+  display: block;
+  margin: 5px 0 0;
+}
+
 .logo {
   display: flex;
   align-items: center;

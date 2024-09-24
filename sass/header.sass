@@ -1,5 +1,49 @@
 @import "vars"
 
+header
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 35px 0 60px
+
+.link-social
+  @include d-flex
+  width: 65px
+  height: 65px
+  background: $gray
+  border-radius: 15px
+  padding: 10px
+  fill: $white
+  &:hover
+    background: $blue
+    
+  svg
+    max-width: 30px  
+
+.date-project
+  font-size: 24px
+  p
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    font-weight: bold
+    &::before
+      content: ''
+      display: inline-block
+      background: $red
+      width: 10px
+      height: 10px
+      min-width: 10px
+      margin: 0 5px 0 0
+      border-radius: 50%
+  span
+    display: block
+    margin: 5px 0 0
+    
+
+
+
 .logo
   display: flex
   align-items: center

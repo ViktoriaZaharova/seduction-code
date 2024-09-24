@@ -1,5 +1,74 @@
 @import "vars"
 
+//  section main
+.main
+  padding: 0 0 100px  
+  position: relative
+  z-index: 1
+
+.main-content
+  max-width: 600px
+  width: 100%
+  margin: 0 auto 
+
+.main-image
+  max-width: 445px
+  width: 100% 
+  font-size: 26px
+  &__img
+    width: 100%
+    margin: 0 0 30px
+    img
+      border-radius: 0 0 40px 40px 
+  h4
+    font-size: 43px
+    margin: 10px 0 0
+
+.subtitle
+  text-align: center
+  font-size: 26px
+  margin: 0 auto
+  text-transform: uppercase
+  color: $gray
+  &::before
+    content: ''
+    display: inline-block
+    width: 17px
+    height: 19px
+    min-width: 17px
+    margin: 0 10px 0 0
+    background: url('../img/home-figure.svg') no-repeat center
+    background-size: 100%   
+
+.slogan-time
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 10px auto 30px
+  font-size: 26px
+  &::before
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 10px 0 0
+    width: 28px
+    height: 10px
+    min-width: 28px
+    background: url('../img/circle-left.svg') no-repeat center
+    background-size: 100%
+  &::after
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 10px
+    width: 28px
+    height: 10px
+    min-width: 28px
+    background: url('../img/circle-right.svg') no-repeat center
+    background-size: 100%  
+
 // бегущая строка
 .marquee
   position: relative
@@ -42,23 +111,141 @@
     margin: 0 auto
     text-align: center
     max-width: 1220px
-    
-// section about course
-  
 
+// section reasons 
+.reasons
+  h2
+    margin: 0
+
+.reasons-img
+  @include d-flex
+  width: 100%
+  img
+    border-radius: 80px
+    width: 100%  
+
+.reasons-box
+  width: 100%
+  height: 445px
+  display: flex
+  flex-direction: column
+  border: 3px solid $blue
+  border-radius: 60px
+  padding: 40px 37px
+  font-size: 26px
+  &__number
+    font-size: 108px
+    font-family: $font
+    color: $blue
+    margin: 0 0 auto
+
+.reasons-box-title
+  text-align: center
+  justify-content: center
+  align-items: center
+  text-transform: uppercase
+  background: $blue
+  color: $white    
+
+// section fantasy
+.fantasy
+  h2
+    top: 0
+    position: sticky
+    text-align: left
+
+.fantasy-content
+  position: relative
+
+
+.fantasy-box
+  width: 100%
+  min-height: 454px
+  position: sticky
+  top: 0
+  left: 0
+  z-index: 1
+  color: $white
+  background: $gray
+  border-radius: 60px
+  padding: 40px 60px
+  display: flex
+  align-items: flex-end
+  overflow: hidden
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
+  &__bg
+    right: 0
+    top: 0
+    position: absolute
+    z-index: -1
+  h4
+    text-transform: uppercase
+
+
+// section about course
+.about-course
+  font-size: 34px
+  h2
+    text-align: left
+
+.about-course-wrapper
+  position: relative
+  z-index: 1
+  width: 100%
+  background: $blue url('../img/about-decor.svg') no-repeat right bottom
+  background-size: contain
+  border-radius: 80px
+  color: $white
+  padding: 80px 100px
+
+.about-course-content
+  max-width: 740px
+  .box-text
+    p
+      &:last-child
+        max-width: 698px
+
+.slogan-box
+  max-width: 595px
+  border-radius: 30px
+  background: $gray
+  margin: 40px 0
+  padding: 30px 34px
+  display: flex
+  align-items: flex-start
+  font-weight: 600
+  &:before
+    content: ''
+    width: 28px
+    min-width: 28px
+    height: 10px
+    background: url('../img/circle.svg') no-repeat center
+    background-size: 100%
+    margin: 13px 25px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+.about-course-img
+  position: absolute
+  z-index: -1
+  bottom: 0
+  right: 0
 
 // section practicum
 .practicum
   position: relative
   z-index: 1
   background: url('../img/practicum-bg.svg') no-repeat right bottom
-  background-size: 463px  
+  background-size: 463px
 
   .box-text
     max-width: 1140px
     font-size: 34px
     text-align: center
-    margin: 0 auto  
+    margin: 0 auto
 
 .days
   width: 100%
@@ -69,7 +256,7 @@
   h3
     width: 50%
     font-size: 108px
-    text-transform: none 
+    text-transform: none
 
 .days-content
   width: 50%
@@ -91,11 +278,11 @@
   width: calc(33.33% - 10px)
   margin: 70px 0 20px
   color: $white
-  background: $gray   
+  background: $gray
   border-radius: 60px
   position: relative
   z-index: 1
-  text-align: center 
+  text-align: center
   padding: 50px 40px 200px
   &__icon
     position: absolute
@@ -105,18 +292,17 @@
   h3
     margin: 0 auto 35px
   .subtitle
-    margin: 0 auto 25px  
+    margin: 0 auto 25px
     // font-family: $font
     color: rgba($white, .5)
   .box-text
     max-width: 430px
-    margin: 0 auto  
+    margin: 0 auto
   &:nth-child(2)
     margin: 0 0 20px
     .practicum-card
       &__icon
         bottom: 32px
-
 
 // section what-awaits
 .what-awaits
@@ -146,14 +332,13 @@
     &__number
       color: $gray
       font-size: 45px
-      font-family: $font  
+      font-family: $font
       min-width: 135px
     &__text
       padding: 0 0 0 20px
     h4
       text-transform: uppercase
       margin: 0 0 20px
-
 
 // section expert
 .expert
@@ -199,7 +384,7 @@
   display: flex
   flex-direction: column
   justify-content: flex-end
-  color: #fff
+  color: $white
   z-index: 1
   position: relative
   padding: 70px 56px
@@ -264,7 +449,7 @@
     &.active
       span
         background: $blue
-        color: #fff
+        color: $white
     .item-click-text
       text-transform: none
       font-family: $default-font
@@ -339,7 +524,7 @@
   width: 100%
   height: 100%
   background: $blue
-  color: #fff
+  color: $white
   border-radius: 60px
   padding: 45px 50px
   display: flex
@@ -392,7 +577,7 @@
   background: url('../img/reviews-bg.jpg') no-repeat center
   background-size: cover
   padding: 100px 0 100px 315px
-  color: #fff
+  color: $white
 
 .reviews-card
   width: 910px
@@ -402,7 +587,7 @@
   z-index: 1
   background: $gray url('../img/reviews-mask.svg') no-repeat center
   background-size: 100%
-  color: #fff
+  color: $white
   margin: 0 20px 0 0
   padding: 35px 50px 40px
   display: flex
@@ -457,7 +642,7 @@
 .chance
   text-align: center
   h2
-    max-width: 1618px
+    max-width: 1520px
     margin: 0 auto 25px
   .title-decor
     &::before
@@ -529,12 +714,12 @@
   .price-card
     &__head
       border: none
-      color: #fff
+      color: $white
       .subtext
         color: rgba(#fff, .5)
     &__body
       background: $blue
-      color: #fff
+      color: $white
       border: none
     .box-text
       margin: 0 0 35px 0
@@ -544,14 +729,14 @@
 .price-card3
   .price-card
     &__head
-      color: #fff
+      color: $white
       border: none
       h3
         font-size: 168px
     &__body
       background: $gray
       border: none
-      color: #fff
+      color: $white
   .list-check
     li
       &::before

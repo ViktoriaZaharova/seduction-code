@@ -26,20 +26,18 @@ footer
     p
       margin: 0 0 30px
       &:last-child
-        margin: 0  
- 
+        margin: 0
 
 .footer-box
   max-width: 50%
   font-size: 28px
   &:last-child
-    text-align: right 
+    text-align: right
     margin-left: auto
 
-         
 .copyright
-  color: rgba($black, .5)      
-  margin: 30px 0 0  
+  color: rgba($black, .5)
+  margin: 30px 0 0
 
 .list-social
   display: flex
@@ -58,7 +56,7 @@ footer
       border-radius: 15px
       background: $gray
       &:hover
-        background: $blue    
+        background: $blue
 
 .link-document
   margin: 0 0 30px auto
@@ -68,3 +66,57 @@ footer
 
 .text-forbidden
   color: rgba($black, .5)
+
+// modal
+.modal__div
+  position: fixed
+  max-width: 1100px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__close
+  position: absolute
+  right: 10px
+  top: 10px
+  background: $blue
+  fill: #fff
+  padding: 10px
+  width: 50px
+  height: 50px
+  border-radius: 10px
+  cursor: pointer
+  z-index: 1
+
+.modal__wrapper
+  background: $white
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 50px auto
+  padding: 30px 40px
+  box-sizing: border-box
+  position: relative
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  -moz-opacity: 0.8
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none

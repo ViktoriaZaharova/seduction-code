@@ -1,3 +1,82 @@
+.main {
+  padding: 0 0 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-image {
+  max-width: 445px;
+  width: 100%;
+  font-size: 26px;
+}
+.main-image__img {
+  width: 100%;
+  margin: 0 0 30px;
+}
+.main-image__img img {
+  border-radius: 0 0 40px 40px;
+}
+.main-image h4 {
+  font-size: 43px;
+  margin: 10px 0 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 26px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #94A3B2;
+}
+.subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 19px;
+  min-width: 17px;
+  margin: 0 10px 0 0;
+  background: url("../img/home-figure.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.slogan-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 30px;
+  font-size: 26px;
+}
+.slogan-time::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0 0;
+  width: 28px;
+  height: 10px;
+  min-width: 28px;
+  background: url("../img/circle-left.svg") no-repeat center;
+  background-size: 100%;
+}
+.slogan-time::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 10px;
+  width: 28px;
+  height: 10px;
+  min-width: 28px;
+  background: url("../img/circle-right.svg") no-repeat center;
+  background-size: 100%;
+}
+
 .marquee {
   position: relative;
   width: 100%;
@@ -42,6 +121,141 @@
   margin: 0 auto;
   text-align: center;
   max-width: 1220px;
+}
+
+.reasons h2 {
+  margin: 0;
+}
+
+.reasons-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.reasons-img img {
+  border-radius: 80px;
+  width: 100%;
+}
+
+.reasons-box {
+  width: 100%;
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #0D284C;
+  border-radius: 60px;
+  padding: 40px 37px;
+  font-size: 26px;
+}
+.reasons-box__number {
+  font-size: 108px;
+  font-family: "Viaoda Libre", sans-serif;
+  color: #0D284C;
+  margin: 0 0 auto;
+}
+
+.reasons-box-title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background: #0D284C;
+  color: #FAFAFA;
+}
+
+.fantasy h2 {
+  top: 0;
+  position: sticky;
+  text-align: left;
+}
+
+.fantasy-content {
+  position: relative;
+}
+
+.fantasy-box {
+  width: 100%;
+  min-height: 454px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #FAFAFA;
+  background: #94A3B2;
+  border-radius: 60px;
+  padding: 40px 60px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  margin: 0 0 20px;
+}
+.fantasy-box:last-child {
+  margin: 0;
+}
+.fantasy-box__bg {
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+.fantasy-box h4 {
+  text-transform: uppercase;
+}
+
+.about-course {
+  font-size: 34px;
+}
+.about-course h2 {
+  text-align: left;
+}
+
+.about-course-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: #0D284C url("../img/about-decor.svg") no-repeat right bottom;
+  background-size: contain;
+  border-radius: 80px;
+  color: #FAFAFA;
+  padding: 80px 100px;
+}
+
+.about-course-content {
+  max-width: 740px;
+}
+.about-course-content .box-text p:last-child {
+  max-width: 698px;
+}
+
+.slogan-box {
+  max-width: 595px;
+  border-radius: 30px;
+  background: #94A3B2;
+  margin: 40px 0;
+  padding: 30px 34px;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 600;
+}
+.slogan-box:before {
+  content: "";
+  width: 28px;
+  min-width: 28px;
+  height: 10px;
+  background: url("../img/circle.svg") no-repeat center;
+  background-size: 100%;
+  margin: 13px 25px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-course-img {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
 }
 
 .practicum {
@@ -223,7 +437,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  color: #fff;
+  color: #FAFAFA;
   z-index: 1;
   position: relative;
   padding: 70px 56px;
@@ -299,7 +513,7 @@
 }
 .tabs__caption li.active span {
   background: #0D284C;
-  color: #fff;
+  color: #FAFAFA;
 }
 .tabs__caption li .item-click-text {
   text-transform: none;
@@ -390,7 +604,7 @@
   width: 100%;
   height: 100%;
   background: #0D284C;
-  color: #fff;
+  color: #FAFAFA;
   border-radius: 60px;
   padding: 45px 50px;
   display: flex;
@@ -452,7 +666,7 @@
   background: url("../img/reviews-bg.jpg") no-repeat center;
   background-size: cover;
   padding: 100px 0 100px 315px;
-  color: #fff;
+  color: #FAFAFA;
 }
 
 .reviews-card {
@@ -463,7 +677,7 @@
   z-index: 1;
   background: #94A3B2 url("../img/reviews-mask.svg") no-repeat center;
   background-size: 100%;
-  color: #fff;
+  color: #FAFAFA;
   margin: 0 20px 0 0;
   padding: 35px 50px 40px;
   display: flex;
@@ -529,7 +743,7 @@
   text-align: center;
 }
 .chance h2 {
-  max-width: 1618px;
+  max-width: 1520px;
   margin: 0 auto 25px;
 }
 .chance .title-decor::before {
@@ -611,14 +825,14 @@
 
 .price-card2 .price-card__head {
   border: none;
-  color: #fff;
+  color: #FAFAFA;
 }
 .price-card2 .price-card__head .subtext {
   color: rgba(255, 255, 255, 0.5);
 }
 .price-card2 .price-card__body {
   background: #0D284C;
-  color: #fff;
+  color: #FAFAFA;
   border: none;
 }
 .price-card2 .price-card .box-text {
@@ -629,7 +843,7 @@
 }
 
 .price-card3 .price-card__head {
-  color: #fff;
+  color: #FAFAFA;
   border: none;
 }
 .price-card3 .price-card__head h3 {
@@ -638,7 +852,7 @@
 .price-card3 .price-card__body {
   background: #94A3B2;
   border: none;
-  color: #fff;
+  color: #FAFAFA;
 }
 .price-card3 .list-check li::before {
   background: url("../img/check-icon-blue.svg") no-repeat center;

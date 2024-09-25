@@ -49,6 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 10px auto 30px;
   font-size: 26px;
 }
@@ -132,9 +133,15 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
+  border-radius: 80px;
+  overflow: hidden;
 }
 .reasons-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 80px;
+  height: 100%;
   width: 100%;
 }
 
@@ -219,6 +226,7 @@
   border-radius: 80px;
   color: #FAFAFA;
   padding: 80px 100px;
+  overflow: hidden;
 }
 
 .about-course-content {
@@ -278,6 +286,9 @@
   font-size: 34px;
   margin: 80px 0 0;
 }
+.days .box-text {
+  text-align: left;
+}
 .days h3 {
   width: 50%;
   font-size: 108px;
@@ -288,6 +299,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 10px;
 }
 .days-content .box-text {
   max-width: 700px;
@@ -295,6 +307,7 @@
 
 .days-icon {
   margin: 0 0 auto;
+  max-width: 155px;
 }
 
 .practicum-wrapper {

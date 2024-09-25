@@ -1,2 +1,422 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1600px) {
+  body {
+    font-size: 22px;
+    line-height: normal;
+  }
+  .main-image {
+    max-width: 300px;
+    font-size: 24px;
+  }
+  .main-image h4 {
+    font-size: 30px;
+  }
+  .btn {
+    height: 80px;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+  .slogan-time {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 250px;
+  }
+  h1::before {
+    top: 37px;
+    left: 182px;
+    height: 188px;
+    background-size: contain;
+  }
+  h2 {
+    font-size: 90px;
+  }
+  h3 {
+    font-size: 70px;
+    line-height: 1;
+  }
+  .h1-subtitle {
+    font-size: 90px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .main-content {
+    max-width: 530px;
+  }
+  .reasons-box {
+    height: 350px;
+    font-size: 24px;
+    padding: 15px;
+  }
+  .reasons-box__number {
+    font-size: 70px;
+  }
+  .about-course-wrapper {
+    padding: 60px 80px;
+  }
+  .about-course-img {
+    max-width: 900px;
+  }
+  .days {
+    font-size: 30px;
+  }
+  .days h3 {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .main {
+    padding: 0 0 50px;
+  }
+  .main .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    margin: 20px 0 30px;
+  }
+  header .date-project {
+    display: none;
+  }
+  header .logo {
+    margin: 0 auto 0 0;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .logo img {
+    max-width: 48px;
+  }
+  .link-social {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  .main-image {
+    max-width: 216px;
+    font-size: 12px;
+  }
+  .main-image__img {
+    margin: 0 0 10px;
+  }
+  .main-image h4 {
+    font-size: 21px;
+  }
+  .main-content {
+    max-width: 380px;
+  }
+  .btn {
+    height: 57px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  h1 {
+    font-size: 119px;
+  }
+  h1::before {
+    top: 17px;
+    left: 137px;
+    width: 100px;
+    height: 91px;
+  }
+  h2 {
+    font-size: 80px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  .h1-subtitle {
+    font-size: 44px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .subtitle::before {
+    width: 8px;
+    height: 7px;
+    min-width: 8px;
+    margin: 0 5px 0 0;
+  }
+  .d-tablet {
+    display: flex;
+  }
+  .d-pc {
+    display: none;
+  }
+  .marquee {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+  .slogan-time {
+    font-size: 14px;
+    margin: 10px auto 15px;
+  }
+  .slogan-time::before, .slogan-time::after {
+    width: 19px;
+    height: 7px;
+    min-width: 19px;
+  }
+  .date-project {
+    justify-content: center;
+    font-size: 14px;
+    margin: 0 auto 15px;
+  }
+  .date-project span {
+    margin: 0 0 0 5px;
+  }
+  .section-two .subtitle-box {
+    font-size: 28px;
+  }
+  .reasons-box {
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  .reasons-img {
+    border-radius: 30px;
+  }
+  .reasons-img img {
+    border-radius: 30px;
+  }
+  .fantasy-box {
+    min-height: 300px;
+    border-radius: 45px;
+    padding: 20px;
+  }
+  .about-course-wrapper {
+    padding: 45px 50px;
+    border-radius: 30px;
+  }
+  .about-course {
+    font-size: 28px;
+  }
+  .practicum {
+    background-size: 400px;
+  }
+  .practicum .box-text {
+    font-size: 28px;
+    max-width: 900px;
+  }
+  .days {
+    font-size: 26px;
+  }
+  .days h3 {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+  .row {
+    margin: 0 -10px;
+  }
+  .col-50 {
+    padding: 0 7px;
+  }
+  .mb-20 {
+    margin-bottom: 10px;
+  }
+  .mb-40 {
+    margin-bottom: 20px;
+  }
+  .logo {
+    font-size: 12px;
+  }
+  .logo img {
+    max-width: 22px;
+    margin: 0 10px 0 0;
+  }
+  .link-social {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    padding: 7px;
+    border-radius: 6px;
+  }
+  h1::before {
+    left: 72px;
+  }
+  .main-content {
+    max-width: 250px;
+  }
+  .main .subtitle {
+    font-size: 10px;
+  }
+  .slogan-time {
+    font-size: 10px;
+  }
+  .slogan-time::before {
+    margin: 0 5px 0 0;
+  }
+  .slogan-time::after {
+    margin: 0 0 0 5px;
+  }
+  .date-project {
+    font-size: 10px;
+  }
+  .track::after {
+    width: 6px;
+    height: 6px;
+  }
+  h2 {
+    font-size: 70px;
+    line-height: 1;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .m-100 {
+    margin: 70px 0;
+  }
+  .title-decor {
+    margin: 0 auto 15px;
+    padding: 0 0 20px;
+  }
+  .title-decor::before {
+    width: 55px;
+    height: 10px;
+  }
+  .section-two .subtitle-box {
+    font-size: 22px;
+    max-width: 800px;
+  }
+  .reasons-box {
+    height: 300px;
+    font-size: 16px;
+  }
+  .reasons-box__number {
+    font-size: 50px;
+  }
+  .about-course-img {
+    max-width: 650px;
+  }
+  .about-course {
+    font-size: 22px;
+  }
+  .practicum {
+    background-size: 300px;
+  }
+  .practicum .box-text {
+    font-size: 19px;
+    max-width: 600px;
+  }
+  .days {
+    font-size: 22px;
+    margin: 60px 0 0;
+  }
+  .days-icon {
+    max-width: 120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .logo {
+    font-size: 10px;
+  }
+  .main .subtitle {
+    font-size: 10px;
+  }
+  .slogan-time, .date-project {
+    font-size: 10px;
+  }
+  .date-project p::before {
+    width: 5px;
+    height: 5px;
+    min-width: 5px;
+  }
+  .m-100 {
+    margin: 50px 0;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .section-two .subtitle-box {
+    font-size: 16px;
+    max-width: 562px;
+  }
+  .reasons-box {
+    height: 175px;
+    font-size: 10px;
+  }
+  .reasons-box__number {
+    font-size: 40px;
+  }
+  .fantasy-box {
+    min-height: 180px;
+    border-radius: 25px;
+  }
+  .about-course-wrapper {
+    padding: 25px 20px;
+    font-size: 14px;
+  }
+  .about-course-content {
+    max-width: 292px;
+  }
+  .slogan-box {
+    margin: 16px 0;
+    padding: 15px 18px;
+    max-width: 255px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  .slogan-box::before {
+    width: 11px;
+    min-width: 11px;
+    height: 4px;
+    margin: 5px 7px 0 0;
+  }
+  .about-course-img {
+    max-width: 470px;
+  }
+  .about-course {
+    font-size: 14px;
+  }
+  .practicum {
+    background-size: 92px;
+    background-position: right calc(100% - 50px);
+  }
+  .practicum .box-text {
+    font-size: 16px;
+    max-width: 500px;
+  }
+  .practicum-card {
+    border-radius: 20px;
+    padding: 15px 10px 90px;
+    margin: 20px 0;
+  }
+  .practicum-card:nth-child(2) {
+    margin: 0 0 20px;
+  }
+  .practicum-card h3 {
+    margin: 0 auto 10px;
+  }
+  .practicum-card .subtitle {
+    margin: 0 auto 5px;
+  }
+  .days {
+    font-size: 16px;
+    margin: 30px 0 0;
+  }
+  .days h3 {
+    font-size: 41px;
+  }
+  .days-icon {
+    max-width: 60px;
+  }
+}

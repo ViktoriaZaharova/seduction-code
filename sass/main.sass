@@ -2,24 +2,24 @@
 
 //  section main
 .main
-  padding: 0 0 100px  
+  padding: 0 0 100px
   position: relative
   z-index: 1
 
 .main-content
   max-width: 600px
   width: 100%
-  margin: 0 auto 
+  margin: 0 auto
 
 .main-image
   max-width: 445px
-  width: 100% 
+  width: 100%
   font-size: 26px
   &__img
     width: 100%
     margin: 0 0 30px
     img
-      border-radius: 0 0 40px 40px 
+      border-radius: 0 0 40px 40px
   h4
     font-size: 43px
     margin: 10px 0 0
@@ -38,12 +38,13 @@
     min-width: 17px
     margin: 0 10px 0 0
     background: url('../img/home-figure.svg') no-repeat center
-    background-size: 100%   
+    background-size: 100%
 
 .slogan-time
   display: flex
   align-items: center
   justify-content: center
+  text-align: center
   margin: 10px auto 30px
   font-size: 26px
   &::before
@@ -67,7 +68,7 @@
     height: 10px
     min-width: 28px
     background: url('../img/circle-right.svg') no-repeat center
-    background-size: 100%  
+    background-size: 100%
 
 // бегущая строка
 .marquee
@@ -120,9 +121,14 @@
 .reasons-img
   @include d-flex
   width: 100%
+  height: 100%
+  border-radius: 80px
+  overflow: hidden
   img
+    object-fit: cover
     border-radius: 80px
-    width: 100%  
+    height: 100%
+    width: 100%
 
 .reasons-box
   width: 100%
@@ -145,7 +151,7 @@
   align-items: center
   text-transform: uppercase
   background: $blue
-  color: $white    
+  color: $white
 
 // section fantasy
 .fantasy
@@ -156,7 +162,6 @@
 
 .fantasy-content
   position: relative
-
 
 .fantasy-box
   width: 100%
@@ -183,7 +188,6 @@
   h4
     text-transform: uppercase
 
-
 // section about course
 .about-course
   font-size: 34px
@@ -199,6 +203,7 @@
   border-radius: 80px
   color: $white
   padding: 80px 100px
+  overflow: hidden
 
 .about-course-content
   max-width: 740px
@@ -253,6 +258,8 @@
   align-items: stretch
   font-size: 34px
   margin: 80px 0 0
+  .box-text
+    text-align: left
   h3
     width: 50%
     font-size: 108px
@@ -262,11 +269,13 @@
   width: 50%
   display: flex
   flex-direction: column
+  padding: 0 0 0 10px
   .box-text
     max-width: 700px
 
 .days-icon
   margin: 0 0 auto
+  max-width: 155px
 
 .practicum-wrapper
   margin: 40px 0 0

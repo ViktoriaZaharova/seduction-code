@@ -5,6 +5,16 @@
   padding: 0 0 100px
   position: relative
   z-index: 1
+  .subtitle
+    &::before
+      content: ''
+      display: inline-block
+      width: 17px
+      height: 19px
+      min-width: 17px
+      margin: 0 10px 0 0
+      background: url('../img/home-figure.svg') no-repeat center
+      background-size: 100%
 
 .main-content
   max-width: 600px
@@ -30,15 +40,6 @@
   margin: 0 auto
   text-transform: uppercase
   color: $gray
-  &::before
-    content: ''
-    display: inline-block
-    width: 17px
-    height: 19px
-    min-width: 17px
-    margin: 0 10px 0 0
-    background: url('../img/home-figure.svg') no-repeat center
-    background-size: 100%
 
 .slogan-time
   display: flex
@@ -375,6 +376,7 @@
 .expert-photo
   margin: -190px auto 55px
   @include d-flex
+  max-width: 350px
 
 // section intensive 
 .intensive-give
@@ -399,11 +401,11 @@
   padding: 70px 56px
   border-radius: 60px
   font-size: 34px
+  overflow: hidden
   &__bg
     width: 100%
     height: 100%
     object-fit: cover
-    border-radius: 60px
     left: 0
     top: 0
     position: absolute
@@ -418,6 +420,7 @@
   .subtitle
     margin: 0 0 50px
     color: rgba($white, .5)
+    text-align: left
   h4
     font-family: $default-font
     text-transform: uppercase
@@ -480,6 +483,7 @@
 
 .program-card
   flex: 1
+  overflow: hidden
   border: 3px solid $blue
   padding: 50px 10px 100px
   text-align: center
@@ -585,24 +589,30 @@
   border-radius: 60px
   background: url('../img/reviews-bg.jpg') no-repeat center
   background-size: cover
-  padding: 100px 0 100px 315px
+  padding: 100px 0 100px 
   color: $white
+
+.reviews-slider
+  padding-left: 315px
+  .slick-slide
+    height: auto
+    margin: 0 20px 0 0  
+  .slick-track
+    display: flex
+    align-items: stretch  
 
 .reviews-card
   width: 910px
-  min-width: 910px
+  height: 100%
   border-radius: 60px
   position: relative
   z-index: 1
-  background: $gray url('../img/reviews-mask.svg') no-repeat center
+  background: $gray url('../img/reviews-mask.svg') no-repeat center top
   background-size: 100%
   color: $white
-  margin: 0 20px 0 0
   padding: 35px 50px 40px
   display: flex
   flex-direction: column
-  &:last-child
-    margin: 0
   h3
     text-transform: none
     margin: 0 0 auto
@@ -689,6 +699,7 @@
     justify-content: center
     align-items: center
     background: $white
+    overflow: hidden
     .subtext
       display: block
       color: $gray

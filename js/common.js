@@ -32,9 +32,22 @@ $('.intensive-give-slider').slick({
   infinite: false,
   slidesToShow: 1,
   variableWidth: true,
+  swipeToSlide: true,
   prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-right.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt=""></button>',
   appendArrows: '.intensive-give-slider__nav'
+});
+
+$('.reviews-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: false,
+  swipeToSlide: true,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-right.svg" alt=""></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt=""></button>',
 });
 
 // модальные окна (несколько)

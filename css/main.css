@@ -3,6 +3,16 @@
   position: relative;
   z-index: 1;
 }
+.main .subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 19px;
+  min-width: 17px;
+  margin: 0 10px 0 0;
+  background: url("../img/home-figure.svg") no-repeat center;
+  background-size: 100%;
+}
 
 .main-content {
   max-width: 600px;
@@ -33,16 +43,6 @@
   margin: 0 auto;
   text-transform: uppercase;
   color: #94A3B2;
-}
-.subtitle::before {
-  content: "";
-  display: inline-block;
-  width: 17px;
-  height: 19px;
-  min-width: 17px;
-  margin: 0 10px 0 0;
-  background: url("../img/home-figure.svg") no-repeat center;
-  background-size: 100%;
 }
 
 .slogan-time {
@@ -429,6 +429,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 350px;
 }
 
 .intensive-give {
@@ -456,13 +457,13 @@
   padding: 70px 56px;
   border-radius: 60px;
   font-size: 34px;
+  overflow: hidden;
 }
 .intensive-give-card__bg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 60px;
   left: 0;
   top: 0;
   position: absolute;
@@ -479,6 +480,7 @@
 .intensive-give-card .subtitle {
   margin: 0 0 50px;
   color: rgba(250, 250, 250, 0.5);
+  text-align: left;
 }
 .intensive-give-card h4 {
   font-family: "Inter Tight", sans-serif;
@@ -552,6 +554,7 @@
 
 .program-card {
   flex: 1;
+  overflow: hidden;
   border: 3px solid #0D284C;
   padding: 50px 10px 100px;
   text-align: center;
@@ -678,26 +681,34 @@
   border-radius: 60px;
   background: url("../img/reviews-bg.jpg") no-repeat center;
   background-size: cover;
-  padding: 100px 0 100px 315px;
+  padding: 100px 0 100px;
   color: #FAFAFA;
+}
+
+.reviews-slider {
+  padding-left: 315px;
+}
+.reviews-slider .slick-slide {
+  height: auto;
+  margin: 0 20px 0 0;
+}
+.reviews-slider .slick-track {
+  display: flex;
+  align-items: stretch;
 }
 
 .reviews-card {
   width: 910px;
-  min-width: 910px;
+  height: 100%;
   border-radius: 60px;
   position: relative;
   z-index: 1;
-  background: #94A3B2 url("../img/reviews-mask.svg") no-repeat center;
+  background: #94A3B2 url("../img/reviews-mask.svg") no-repeat center top;
   background-size: 100%;
   color: #FAFAFA;
-  margin: 0 20px 0 0;
   padding: 35px 50px 40px;
   display: flex;
   flex-direction: column;
-}
-.reviews-card:last-child {
-  margin: 0;
 }
 .reviews-card h3 {
   text-transform: none;
@@ -796,6 +807,7 @@
   justify-content: center;
   align-items: center;
   background: #FAFAFA;
+  overflow: hidden;
 }
 .price-card__head .subtext {
   display: block;

@@ -1,5 +1,16 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1900px) {
+  .what-awaits__content {
+    margin: 0;
+  }
+  .what-awaits h2 {
+    text-align: left;
+  }
+  .price {
+    font-size: 70px;
+  }
+}
 @media only screen and (max-width: 1600px) {
   body {
     font-size: 22px;
@@ -36,6 +47,9 @@
     font-size: 70px;
     line-height: 1;
   }
+  h4 {
+    font-size: 37px;
+  }
   .h1-subtitle {
     font-size: 90px;
   }
@@ -65,8 +79,64 @@
   .days h3 {
     font-size: 70px;
   }
+  .what-awaits__content {
+    max-width: 700px;
+  }
+  .what-awaits-box__number {
+    min-width: 60px;
+  }
+  .title-wrapper {
+    margin: 0 0 60px;
+  }
+  .tabs__caption li {
+    font-size: 40px;
+  }
+  .tabs__caption li .item-click-text {
+    font-size: 20px;
+  }
+  .program-card .box-text {
+    font-size: 30px;
+  }
+  .advantages-box {
+    padding: 35px 30px;
+  }
+  .advantages-box-bg {
+    padding: 0;
+  }
+  .reviews-content {
+    padding: 40px 0;
+  }
+  .reviews-card {
+    width: 700px;
+  }
+  .reviews-slider {
+    padding-left: 265px;
+  }
+  .bonuses-card {
+    max-width: 500px;
+  }
+  .bonuses-card .box-text {
+    max-width: 358px;
+  }
+  .panel_heading .block_title:after {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+  .chance h2 {
+    max-width: 1000px;
+  }
+  .price-card3 .price-card__head h3 {
+    font-size: 120px;
+  }
+  .price-card .price {
+    margin: 60px 0 0;
+  }
 }
 @media only screen and (max-width: 1300px) {
+  body {
+    font-size: 20px;
+  }
   .main {
     padding: 0 0 50px;
   }
@@ -114,6 +184,11 @@
     font-size: 14px;
     border-radius: 15px;
   }
+  .btn .svg-icon {
+    width: 20px;
+    min-width: 20px;
+    margin: 0 10px 0 0;
+  }
   h1 {
     font-size: 119px;
   }
@@ -130,19 +205,19 @@
     font-size: 50px;
   }
   h4 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .h1-subtitle {
     font-size: 44px;
   }
-  .subtitle {
-    font-size: 14px;
-  }
-  .subtitle::before {
+  .main .subtitle::before {
     width: 8px;
     height: 7px;
     min-width: 8px;
     margin: 0 5px 0 0;
+  }
+  .subtitle {
+    font-size: 18px;
   }
   .d-tablet {
     display: flex;
@@ -209,8 +284,171 @@
   .days h3 {
     font-size: 70px;
   }
+  .what-awaits-box {
+    font-size: 26px;
+    padding: 40px 0;
+  }
+  .what-awaits-box__number {
+    min-width: 35px;
+  }
+  .what-awaits__content {
+    max-width: 620px;
+  }
+  .what-awaits__img {
+    max-width: 320px;
+  }
+  .expert {
+    margin: 150px 0 100px;
+  }
+  .expert-photo {
+    max-width: 250px;
+    margin: -110px auto 55px;
+  }
+  .expert-content .box-text {
+    max-width: 700px;
+  }
+  .title-wrapper {
+    margin: 0 0 50px;
+  }
+  .intensive-give-card {
+    min-height: 800px;
+    width: 600px;
+    padding: 40px;
+    border-radius: 50px;
+    font-size: 28px;
+  }
+  .intensive-give-card__content {
+    padding: 30px;
+    border-radius: 30px;
+  }
+  .tabs__caption li {
+    font-size: 30px;
+  }
+  .tabs__caption li .item-click-text {
+    font-size: 16px;
+  }
+  .tabs__caption li .item-click-text img {
+    width: 25px;
+    min-width: 25px;
+    margin: 0 10px 0 0;
+  }
+  .advantages-box {
+    padding: 25px 20px;
+    border-radius: 30px;
+  }
+  .advantages-box-bg {
+    padding: 0;
+  }
+  .advantages-box h4 {
+    margin: 20px 0 10px;
+  }
+  .why-sign-card {
+    padding: 35px;
+    border-radius: 35px;
+  }
+  .why-sign-card__icon {
+    margin: 0 0 70px;
+    height: 25px;
+  }
+  .why-sign-card h5 {
+    font-size: 30px;
+  }
+  .reviews-card {
+    width: 500px;
+  }
+  .bonuses-card {
+    max-width: 300px;
+    border-radius: 30px;
+    padding: 30px 10px 30px;
+    font-size: 16px;
+    box-shadow: -5px 5px 0px 0px #94a3b2;
+    border-width: 1px;
+    margin: 0 10px 0 0;
+  }
+  .bonuses-card__img {
+    max-width: 188px;
+    margin: 0 auto 30px;
+  }
+  .bonuses-card .box-text {
+    margin: 10px auto 0;
+  }
+  .bonuses-card:last-child {
+    padding: 20px 5px 0;
+    box-shadow: 5px -5px 0px 0px #0d284c;
+    margin: 5px 0 0;
+  }
+  .bonuses-card:last-child .box-text {
+    max-width: 300px;
+  }
+  .bonuses-card:last-child .bonuses-card__img {
+    max-width: 277px;
+  }
+  .panel_heading {
+    padding: 40px 30px;
+    border-radius: 40px;
+  }
+  .panel_heading .block_hover {
+    font-size: 28px;
+  }
+  .price-card__head {
+    min-height: 250px;
+    padding: 10px;
+    border-radius: 25px;
+    border-width: 1px;
+  }
+  .price-card__body {
+    border-radius: 25px;
+    border-width: 1px;
+  }
+  .price-card .box-text {
+    margin: 0 0 20px;
+  }
+  .price-card .price {
+    margin: 22px 0 0;
+  }
+  .price {
+    font-size: 50px;
+  }
+  footer {
+    padding: 40px 0;
+  }
+  footer::before {
+    width: 300px;
+    height: 300px;
+  }
+  footer .box-text p {
+    margin: 0 0 20px;
+  }
+  footer .box-text p:last-child {
+    margin: 0;
+  }
+  footer .logo {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+  .list-social {
+    margin: 0 0 20px;
+  }
+  .list-social li a {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    padding: 12px;
+  }
+  .footer-box {
+    font-size: 20px;
+  }
+  .link-document {
+    margin: 0 0 20px auto;
+  }
+  .copyright {
+    margin: 20px 0 0;
+  }
 }
 @media only screen and (max-width: 992px) {
+  body {
+    font-size: 18px;
+  }
   .container {
     padding: 0 20px;
   }
@@ -218,6 +456,9 @@
     margin: 0 -10px;
   }
   .col-50 {
+    padding: 0 7px;
+  }
+  .col-30 {
     padding: 0 7px;
   }
   .mb-20 {
@@ -242,6 +483,9 @@
   }
   h1::before {
     left: 72px;
+  }
+  .subtitle {
+    font-size: 14px;
   }
   .main-content {
     max-width: 250px;
@@ -273,7 +517,7 @@
     font-size: 30px;
   }
   h4 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1;
   }
   .m-100 {
@@ -281,7 +525,7 @@
   }
   .title-decor {
     margin: 0 auto 15px;
-    padding: 0 0 20px;
+    padding: 0 0 30px;
   }
   .title-decor::before {
     width: 55px;
@@ -318,6 +562,102 @@
   .days-icon {
     max-width: 120px;
   }
+  .what-awaits__content {
+    max-width: 500px;
+  }
+  .what-awaits-box {
+    padding: 25px 0;
+    font-size: 16px;
+  }
+  .what-awaits-box__number {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .what-awaits-box h4 {
+    font-size: 22px;
+  }
+  .what-awaits__img {
+    max-width: 230px;
+  }
+  .slick-arrow {
+    max-width: 80px;
+  }
+  .tabs__caption {
+    margin: 0 -5px;
+  }
+  .tabs__caption li {
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 0 5px;
+    margin: 0 0 10px;
+  }
+  .tabs__caption li span {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .tabs__caption li .item-click-text {
+    font-size: 14px;
+  }
+  .program-card {
+    min-height: 500px;
+  }
+  .program-card .box-text {
+    font-size: 22px;
+  }
+  .program-card__bg {
+    max-width: 250px;
+  }
+  .reviews-slider {
+    padding-left: 200px;
+  }
+  .reviews-card {
+    width: 500px;
+    border-radius: 25px;
+    padding: 30px;
+  }
+  .reviews-card .box-text {
+    margin: 75px 0 0;
+  }
+  .panel_heading .block_hover {
+    font-size: 22px;
+    padding: 15px 0 0;
+  }
+  .panel_heading .block_hover .box-text {
+    max-width: 600px;
+  }
+  .chance-content {
+    border-radius: 40px;
+    padding: 40px;
+  }
+  .chance-content .box-text {
+    max-width: 700px;
+    font-size: 28px;
+  }
+  .price-card__head {
+    min-height: 170px;
+  }
+  .price-card__body {
+    padding: 15px 20px;
+  }
+  .price-card__footer {
+    margin: 10px auto 0;
+  }
+  .price-card3 .price-card__head h3 {
+    font-size: 66px;
+  }
+  .list-check li {
+    margin: 0 0 10px;
+  }
+  .list-check li::before {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    margin: 5px 8px 0 0;
+  }
+  .price {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   body {
@@ -342,6 +682,7 @@
   }
   h2 {
     font-size: 44px;
+    margin: 0 auto 20px;
   }
   h4 {
     font-size: 22px;
@@ -353,6 +694,7 @@
   .reasons-box {
     height: 175px;
     font-size: 10px;
+    border-width: 1px;
   }
   .reasons-box__number {
     font-size: 40px;
@@ -399,6 +741,7 @@
     border-radius: 20px;
     padding: 15px 10px 90px;
     margin: 20px 0;
+    width: calc(33.33% - 5px);
   }
   .practicum-card:nth-child(2) {
     margin: 0 0 20px;
@@ -418,5 +761,230 @@
   }
   .days-icon {
     max-width: 60px;
+  }
+  .what-awaits__content {
+    max-width: 405px;
+  }
+  .what-awaits-box {
+    padding: 25px 0;
+    border-width: 1px;
+    font-size: 16px;
+  }
+  .what-awaits-box h4 {
+    font-size: 22px;
+  }
+  .what-awaits-box__number {
+    font-size: 22px;
+    min-width: 25px;
+  }
+  .what-awaits-box__text {
+    padding: 0 0 0 10px;
+  }
+  .expert-photo {
+    max-width: 140px;
+    margin: -75px auto 20px;
+  }
+  .expert-content {
+    border-radius: 30px;
+    padding: 0 20px 30px;
+  }
+  .expert-content .box-text {
+    max-width: 400px;
+  }
+  .title-wrapper {
+    margin: 0 0 20px;
+  }
+  .intensive-give-card {
+    width: 360px;
+    min-height: 400px;
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 13px;
+  }
+  .intensive-give-card h4 {
+    font-size: 14px;
+    margin: 0 0 5px;
+  }
+  .intensive-give-card__content {
+    border-radius: 20px;
+    padding: 20px 15px;
+  }
+  .intensive-give-card .subtitle {
+    margin: 0 0 20px;
+  }
+  .intensive-give-slider .slick-slide {
+    margin: 0 10px 0 0;
+  }
+  .tabs__caption li .item-click-text {
+    font-size: 12px;
+    line-height: 1;
+  }
+  .tabs__caption li .item-click-text img {
+    width: 14px;
+    min-width: 14px;
+    margin-right: 5px;
+  }
+  .program-card {
+    min-height: 240px;
+    border-width: 1.2px;
+    padding: 20px 10px 50px;
+  }
+  .program-card h4 {
+    margin: 0 auto 5px;
+  }
+  .program-card .box-text {
+    font-size: 13px;
+  }
+  .program-card__bg {
+    max-width: 187px;
+    bottom: 15px;
+  }
+  .program-card:first-child {
+    margin-right: -1px;
+    border-radius: 20px 0 0 20px;
+  }
+  .program-card:nth-child(2) {
+    padding-bottom: 120px;
+  }
+  .program-card:last-child {
+    margin-left: -1px;
+    border-radius: 0 20px 20px 0;
+  }
+  .program-card__icon {
+    max-width: 50px;
+    margin: 0 auto 10px;
+  }
+  .advantages-box {
+    font-size: 12px;
+    border-radius: 25px;
+    padding: 20px;
+    min-height: 200px;
+  }
+  .advantages-box__icon img {
+    max-width: 58px;
+  }
+  .advantages-box h4 {
+    font-size: 18px;
+  }
+  .advantages-box-bg {
+    padding: 0;
+  }
+  .why-sign-card {
+    border-radius: 30px;
+    padding: 20px;
+    border-width: 1px;
+  }
+  .why-sign-card__icon {
+    margin: 0 0 50px;
+  }
+  .why-sign-card h5 {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  .reviews-slider {
+    padding-left: 165px;
+  }
+  .reviews-content {
+    border-radius: 30px;
+  }
+  .reviews-card {
+    padding: 20px;
+    width: 400px;
+    font-size: 14px;
+  }
+  .panel_heading {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 0 10px;
+  }
+  .panel_heading:last-child {
+    margin: 0;
+  }
+  .panel_heading .block_title::after {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 6px;
+    background-size: 15px;
+  }
+  .panel_heading .block_hover {
+    font-size: 16px;
+    max-width: 450px;
+  }
+  .chance-content {
+    border-radius: 30px;
+    padding: 40px 20px;
+  }
+  .chance-content .box-text {
+    max-width: 567px;
+    font-size: 16px;
+  }
+  .chance h2 {
+    max-width: 605px;
+  }
+  .price-card__head {
+    min-height: 120px;
+    margin: 0 0 10px;
+  }
+  .price-card__head .subtext {
+    margin: 0 auto 10px;
+  }
+  .price-card__body {
+    line-height: normal;
+    font-size: 12px;
+  }
+  .price-card h4 {
+    margin: 0 0 10px;
+  }
+  .price {
+    font-size: 35px;
+  }
+  .callback {
+    margin: 0;
+  }
+  .btn-group .btn {
+    width: 100%;
+    margin: 0 auto 10px;
+  }
+  .btn-group .btn:last-child {
+    margin: 0 auto;
+  }
+  .list-social li {
+    margin: 0 5px 0 0;
+  }
+  .list-social li a {
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    padding: 8px;
+  }
+  footer::before {
+    width: 203px;
+    height: 203px;
+    bottom: -45px;
+  }
+  footer .logo {
+    font-size: 12px;
+  }
+  footer .box-text p {
+    margin: 0 0 15px;
+  }
+  footer .box-text p:last-child {
+    margin: 0;
+  }
+  .footer-box {
+    font-size: 10px;
+  }
+  .link-document {
+    margin: 0 0 15px auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h2 {
+    font-size: 30px;
+  }
+  .title-wrapper {
+    margin: 0 0 15px;
   }
 }

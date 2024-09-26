@@ -177,6 +177,7 @@
     .svg-icon
       width: 20px
       min-width: 20px
+      height: 20px
       margin: 0 10px 0 0
 
   h1
@@ -719,6 +720,8 @@
     padding: 25px 0
     border-width: 1px
     font-size: 16px
+    &:last-child
+      border-width: 1px
     h4
       font-size: 22px
     &__number
@@ -903,15 +906,466 @@
   .link-document
     margin: 0 0 15px auto
 
+@media only screen and (max-width: 735px)
+  header
+    margin: 20px 0 40px
+
+  .link-social
+    width: 45px
+    height: 45px
+    min-width: 45px
+    border-radius: 10px
+    svg
+      max-width: 20px  
+
+  .logo
+    font-size: 18px
+    img
+      max-width: 35px
+
+  .main
+    .container
+      flex-direction: column
+      align-items: center
+    .subtitle
+      font-size: 14px
+      &::before
+        width: 12px
+        height: 13px  
+
+  .main-content
+    max-width: 300px
+    order: -1
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  h1
+    font-size: 145px
+    &::before
+      top: 21px
+      width: 148px
+      height: 110px
+        
+  .h1-subtitle
+    font-size: 54px      
+
+  .date-project
+    order: 1
+    margin: 10px auto 0  
+    font-size: 14px
+
+  .slogan-time
+    font-size: 14px
+    position: relative
+    z-index: 1
+    padding: 15px 0 0
+    &::before, &:after
+      position: absolute
+      top: 0
+    &::before
+      left: calc(50% - 25px)
+    &::after
+      right: calc( 50% - 25px )    
+
+  .main-image
+    max-width: 300px
+    font-size: 14px
+    text-align: center
+    margin: 15px auto 0
+    .d-pc-tablet
+      display: none
+    .d-mobile
+      display: block   
+    &__icon
+      justify-content: center
+      display: flex
+      align-items: center
+    &__text
+      max-width: 300px   
+    h4
+      margin: 10px auto
+      font-size: 28px        
+
+@media only screen and (max-width: 650px)
+  .prices
+    .col-30
+      width: 100%
+
+  .price-card
+    &__head
+      margin: 0 auto
+      min-height: 155px
+      h3
+        font-size: 40px
+    .subtext
+      font-size: 18px
+    &__body
+      padding: 20px
+      font-size: 14px
+    .price
+      margin: 20px auto 0
+
+  .list-check li::before
+    margin-top: 3px
+
+  .bonuses-wrapper
+    flex-direction: column
+    align-items: center
+
+  .bonuses-card
+    max-width: 295px
+    margin: 0 auto 20px
+    padding: 25px 10px
+    font-size: 14px
+    .box-text
+      max-width: 250px
+    &:last-child
+      margin: 0 auto
+      .box-text
+        max-width: 250px
+      .bonuses-card
+        &__img
+          max-width: 225px
+    &__img
+      max-width: 157px
+      margin: 0 auto 20px
+
+  .tabs__caption
+    li
+      width: 33.33%
+
+  .what-awaits__img
+    position: relative
+    margin: 20px auto 0
+    top: 0
+    transform: none
+    right: auto
+    max-width: 300px
+    border-radius: 20px
+    .d-mobile
+      display: block
+    .d-pc-tablet
+      display: none 
+    img
+      border-radius: 20px   
+
+  .what-awaits__content
+    max-width: none
+
+  .what-awaits-box
+    font-size: 14px
+    padding: 15px 0
+    h4
+      font-size: 16px
+      margin: 0 0 10px
+    &__number
+      font-size: 16px
+      min-width: 20px
+    &__text
+      padding: 0 0 0 5px
+
+  .days 
+    flex-wrap: wrap
+    margin: 20px 0 0
+    h3
+      width: 100%
+      text-align: center
+      margin: 0 auto 20px
+      font-size: 26px
+
+  .days-content
+    padding: 0
+    width: 100%
+    align-items: flex-start
+    flex-direction: row
+    .box-text
+      max-width: none
+      width: 100%
+      margin: 0 0 0 20px
+
+  .practicum-wrapper
+    margin: 20px 0 0
+    flex-wrap: wrap
+
+  .practicum-card
+    width: 100%
+    margin: 0 0 10px
+    border-radius: 20px
+    padding: 20px 20px 80px
+    font-size: 14px
+    .box-text
+      font-size: 14px
+    &__icon
+      max-width: 144px
+
+  .practicum-card:nth-child(2) .practicum-card__icon
+    bottom: 20px
+
 @media only screen and (max-width: 576px)
+  body
+    font-size: 14px
+
+  .container
+    padding: 0 10px
+
   h2
     font-size: 30px
+    margin: 0 auto 20px
+
+  h3
+    font-size: 22px
+
+  .m-100
+    margin: 40px 0
 
   .title-wrapper
     margin: 0 0 15px
 
-@media only screen and (max-width: 480px)
+  .price
+    font-size: 40px
 
-@media only screen and (max-width: 420px)
+  .chance-content
+    border-radius: 20px
+    padding: 40px 20px
+    .box-text
+      font-size: 14px
+
+  .chance
+    h2
+      margin: 0 auto 10px
+
+  .title-decor
+    padding: 0 0 20px
+    &::before
+      width: 35px
+      height: 6px
+
+  .panel_heading
+    .block_title
+      &:after
+        width: 25px
+        height: 25px
+        min-width: 25px
+        background-size: 10px
+    h3
+      font-size: 18px
+      max-width: 220px
+    .block_hover
+      font-size: 12px
+      padding: 10px 0 0
+
+  .reviews-slider
+    padding: 0 0 0 25px
+    .slick-slide
+      margin: 0 10px 0 0
+
+  .reviews-content
+    border-radius: 25px
+
+  .reviews-card
+    font-size: 12px
+    width: 250px
+    .box-text
+      margin: 30px 0 0
+
+  .col-50, .col-30
+    width: 100%
+
+  .why-sign-card
+    border-radius: 25px
+    font-size: 14px
+    padding: 25px
+    &__icon
+      margin: 0 0 65px
+    h5
+      font-size: 14px
+
+  .marquee
+    font-size: 16px
+    padding: 12px 0
+
+  .track::after
+    width: 4px
+    height: 4px
+
+  .advantages-box
+    font-size: 14px
+    min-height: 256px
+    padding: 25px
+    &__icon
+      img
+        max-width: 35px
+    &-bg
+      padding: 0
+
+  .tabs__content
+    .w-100
+      overflow-x: auto
+
+  .program-content
+    min-width: 727px
+
+  .tabs__caption li
+    font-size: 16px
+    height: 35px
+    margin: 0 0 8px
+    padding: 0 4px
+
+    .item-click-text
+      font-size: 10px
+
+  .arrow-right-click
+    max-width: 95px
+    margin: 10px 0 10px auto
+
+  .program-card
+    font-size: 13px
+    h4
+      font-size: 18px
+
+  .intensive-give-card
+    width: 100%
+    padding: 15px
+    min-height: 330px
+    border-radius: 25px
+    font-size: 12px
+    &__content
+      border-radius: 15px
+    h4
+      font-size: 12px
+
+  .slick-arrow
+    max-width: 60px
+
+  .intensive-give-slider
+    min-width: auto
+
+  .expert
+    margin: 80px 0 40po9
+
+  .expert-photo
+    max-width: 100px
+    margin: -50px auto 30px
+
+  .expert-content
+    border-radius: 20px
+    .box-text
+      max-width: 250px
+
+  .about-course-wrapper
+    border-radius: 20px  
+    background: #0D284C url('../img/about-decor-mob.svg') no-repeat center -140px
+    background-size: cover
+    font-size: 12px
+    padding: 25px 25px 230px 
+
+  .slogan-box
+    max-width: none
+    width: 100%
+    border-radius: 15px
+    font-size: 12px
+
+  .about-course-content
+    max-width: none  
+
+  .about-course-img
+    max-width: none
+    width: 423px
+    right: auto
+    left: 40%
+    transform: translate(-50%,0)
+
+  .fantasy
+    margin: 40px 0 20px
+    h2
+      text-align: center  
+
+  .fantasy-box
+    border-radius: 20px
+    padding: 15px
+    font-size: 14px
+    min-height: 150px
+    h4
+      font-size: 16px 
+
+  .reasons
+    .d-mobile
+      display: block
+    .d-pc-tablet
+      display: none       
+
+  .reasons-box
+    font-size: 14px
+    height: 145px
+    &__number
+      margin: 0 0 auto
+      font-size: 30px 
+
+  .reasons-box-title
+    height: auto
+    padding: 13px 10px      
+
+  .section-two .subtitle-box
+    font-size: 14px
+    max-width: 300px
+
+
 
 @media only screen and (max-width: 370px)
+  footer
+    padding: 100px 0
+    font-size: 14px
+    &:before
+      display: none
+    .logo
+      margin: 0 auto 20px
+      font-size: 17px
+      text-align: left
+      img
+        width: 36px
+        min-width: 36px
+    .box-text
+      p
+        margin: 0 0 10px
+
+  .footer-box
+    max-width: 100%
+    width: 100%
+    text-align: center
+    margin: 0 auto 15px
+    &:last-child
+      margin: 0 auto
+      text-align: center
+
+  .list-social
+    justify-content: center
+    margin: 0 auto 10px
+    li a
+    width: 55px
+    height: 55px
+    min-width: 55px
+    border-radius: 15px
+
+  .d-mobile
+    display: block
+
+  .d-pc-tablet
+    display: none
+
+  .text-forbidden
+    font-size: 12px
+    margin: 0 auto 15px
+
+  .link-document
+    margin: 0 auto 15px
+    &:last-child
+      margin: 0 auto
+
+  .copyright
+    margin: 10px auto 0
+
+  .about-course-wrapper
+    background-position: center -30px
+
+  

@@ -395,7 +395,7 @@ h4 {
   align-items: stretch;
 }
 
-.d-tablet {
+.d-tablet, .d-mobile {
   display: none;
 }
 

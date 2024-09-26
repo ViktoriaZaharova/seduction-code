@@ -13,7 +13,6 @@
   <!-- add plugins css -->
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"> -->
   <!-- add plugins css end -->
 
   <link rel="stylesheet" href="css/style.css">
@@ -30,7 +29,8 @@
   <main class="main">
     <div class="container">
       <div class="main-image main-image-left">
-        <div class="main-image__img wow animate__animated animate__fadeIn"><img src="img/main-img1.jpg" alt=""></div>
+        <div class="main-image__img wow animate__animated animate__fadeIn"><img class="d-pc-tablet" src="img/main-img1.jpg" alt="">
+        <img class="d-mobile" src="img/home-photo-mobile.png" alt=""></div>
         <div class="main-image__text">
           <div class="main-image__icon"><img src="img/home-decor.svg" alt=""></div>
           <h4>Энергия соблазнения —
@@ -43,7 +43,7 @@
             <p>Старт:</p>
             <span>1 октября</span>
           </div>
-          <a href="index.html" class="logo"><img src="img/logo.png" alt=""><span>Марьяна <br>Романова</span></a>
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""><span class="logo-text">Марьяна <br><span>Романова</span></span></a>
           <a href="#" class="link-social"><svg class="svg-icon">
               <use xlink:href="img/sprite.svg#whatsapp"></use>
             </svg></a>
@@ -61,7 +61,7 @@
         <a href="#callbackModal" class="btn btn-red w-100 open_modal">Записаться на интенсив</a>
       </div>
       <div class="main-image main-image-right">
-        <div class="main-image__img wow animate__animated animate__fadeIn"><img src="img/main-img2.jpg" alt=""></div>
+        <div class="main-image__img wow animate__animated animate__fadeIn d-pc-tablet"><img src="img/main-img2.jpg" alt=""></div>
         <div class="main-image__text">
           <div class="box-text">
             <p><strong>11 дней — и ты в центре внимания:</strong> Притягивай к себе самых достойных мужчин, используя
@@ -104,6 +104,11 @@
           <div class="col-50">
             <div class="w-100">
               <div class="row">
+                <div class="col-50 mb-20 d-mobile">
+                  <div class="reasons-box reasons-box-title">
+                    <h2>А ты?</h2>
+                  </div>
+                </div>
                 <div class="col-50 mb-20">
                   <div class="reasons-box">
                     <div class="reasons-box__number">01</div>
@@ -132,7 +137,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-50 mb-20">
+                <div class="col-50 mb-20 d-pc-tablet">
                   <div class="reasons-box reasons-box-title">
                     <h2>А ты?</h2>
                   </div>
@@ -397,13 +402,13 @@
       </div>
 
     </div>
-    <div class="what-awaits__img wow animate__animated animate__fadeIn"><img src="img/awaits-img.jpg" alt=""></div>
+    <div class="what-awaits__img wow animate__animated animate__fadeIn"><img class="d-pc-tablet" src="img/awaits-img.jpg" alt=""><img class="d-mobile" src="img/awaits-img-mob.jpg" alt=""></div>
   </section>
 
   <section class="expert">
     <div class="container">
       <div class="expert-content">
-        <div class="expert-photo wow animate__animated animate__fadeIn"><img src="img/expert-photo.png" alt=""></div>
+        <div class="expert-photo wow animate__animated animate__fadeIn"><img class="d-pc-tablet" src="img/expert-photo.png" alt=""> <img class="d-mobile" src="img/expert-photo-mob.png" alt=""></div>
         <h2 class="title-decor"><span>Марьяна Романова,</span>
           признанный эксперт в области энергии и духовных практик,</h2>
         <div class="box-text">
@@ -513,6 +518,7 @@
             </span>
           </li>
         </ul>
+        <div class="arrow-right-click d-mobile"><img src="img/arrow-right.svg" alt=""></div>
         <div class="tabs__content active">
           <div class="w-100">
             <div class="program-content">
@@ -1210,17 +1216,27 @@
   <footer>
     <div class="container">
       <div class="footer-box">
-        <a href="index.html" class="logo"><img src="img/logo.png" alt=""><span>Марьяна <br>Романова</span></a>
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""><span class="logo-text">Марьяна <br><span>Романова</span></span></a>
+
+        <div class="d-mobile">
+          <ul class="list-social my-ul">
+            <li><a href="#"><img src="img/tg.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+          </ul>
+          <div class="text-forbidden">* Meta признана экстремистской организацией в РФ</div>
+        </div>
         <div class="box-text">
           <p>ИП Хайнц Элеонора Александровна</p>
           <p>ИНН 504015649374</p>
           <p>ОГРН 317774600235162</p>
         </div>
-        <div class="copyright">© 2024 Все права защищены</div>
+        <div class="copyright d-pc-tablet">© 2024 Все права защищены</div>
       </div>
 
       <div class="footer-box">
-        <ul class="list-social my-ul">
+        <ul class="list-social my-ul d-pc-tablet">
           <li><a href="#"><img src="img/tg.svg" alt=""></a></li>
           <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
           <li><a href="#"><img src="img/insta.svg" alt=""></a></li>
@@ -1229,32 +1245,31 @@
         <a href="#" class="link-document" target="_blank">Политика конфиденциальности</a>
         <a href="#" class="link-document" target="_blank">Договор оферты</a>
         <a href="#" class="link-document" target="_blank">Обработка персональных данных</a>
-        <div class="text-forbidden">* Meta признана экстремистской организацией в РФ</div>
+        <div class="text-forbidden d-pc-tablet">* Meta признана экстремистской организацией в РФ</div>
+        <div class="copyright d-mobile">© 2024 Все права защищены</div>
       </div>
     </div>
   </footer>
-<!-- modal -->
+  <!-- modal -->
   <div class="modal__div" id="callbackModal">
     <div class="modal__wrapper">
-        <span class="modal__close"><img src="img/plus.svg" alt=""></span>
-        modal-code
+      <span class="modal__close"><img src="img/plus.svg" alt=""></span>
+      modal-code
     </div>
-</div>
+  </div>
 
-<div class="modal__div" id="payModal">
-  <div class="modal__wrapper">
+  <div class="modal__div" id="payModal">
+    <div class="modal__wrapper">
       <span class="modal__close"><img src="img/plus.svg" alt=""></span>
       modal-code payment
+    </div>
   </div>
-</div>
-<!-- Пoдлoжкa -->
-<div class="overlay"></div>
+  <!-- Пoдлoжкa -->
+  <div class="overlay"></div>
 
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
-  <!-- <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script> -->
   <script src="js/wow.js"></script>
   <!-- add plugins js end-->
 

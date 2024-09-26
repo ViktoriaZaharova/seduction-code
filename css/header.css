@@ -61,3 +61,8 @@ header {
 .logo img {
   margin: 0 13px 0 0;
 }
+
+.logo-text span {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
+}
